@@ -1,9 +1,9 @@
 """
 Created on Fri nov 15 13:35:09 2022
 
-@author: Diego De Pablo
+@author: Diegodepab
 """
-#FUNCIONES
+#FUNCIONES capacez  de pasar de binario a decimal y viceversa
 
 def decimal_a_binario(n):
     binario = ""
@@ -12,7 +12,7 @@ def decimal_a_binario(n):
         n = n // 2
     return binario #si quisiera devolverlo en int()
 
-def decimal_a_binario_automatico(n):  #no permitido por el profe
+def decimal_a_binario_automatico(n):  #version str
     return int(bin(n).replace("0b", ""))
 
 def binario_a_decimal(b):
@@ -21,9 +21,9 @@ def binario_a_decimal(b):
     for i in range(len(b)):
         potencia = len(b) - (i + 1)
         decimal += int(b[i]) * (2 ** potencia)
-    return decimal
+    return decimal #int
 
-def binario_a_decimal_automatico(b): #no permitido por el profe
+def binario_a_decimal_automatico(b): #version str
     return int(str(b), 2)
 
 # Prueba de las funciones
