@@ -3,7 +3,7 @@ Created on Fri nov 15 13:35:09 2022
 
 @author: Diegodepab
 """
-#FUNCIONES capacez  de pasar de binario a decimal y viceversa
+#FUNCIONES capaces de pasar de binario a decimal y viceversa
 
 def decimal_a_binario(n):
     binario = ""
